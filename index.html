@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liquid Glass Weather Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="background">
+        <div class="blob blob1"></div>
+        <div class="blob blob2"></div>
+        <div class="blob blob3"></div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button id="themeBtn" class="theme-btn">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- Main Glass Card -->
+    <div class="glass-card">
+
+        <h1>🌦️ Weather Dashboard</h1>
+
+        <p class="subtitle">
+            Real-Time Weather using REST API
+        </p>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search City...">
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button id="locationBtn">
+                <i class="fa-solid fa-location-crosshairs"></i>
+            </button>
+            <button onclick="toggleUnit()">
+            °C / °F
+            </button>
+
+            <button onclick="saveFavorite(cityName.innerText)">
+            ⭐ 
+            </button>
+
+        </div>
+
+        <!-- Loader -->
+        <div id="loader" class="loader hidden"></div>
+
+        <!-- Error -->
+        <div id="errorMessage"></div>
+
+        <!-- Weather Card -->
+        <div id="weatherCard" class="weather-card hidden">
+
+            <div class="top">
+
+                <div>
+
+                    <h2 id="cityName">
+                        Chennai
+                    </h2>
+
+                    <p id="country">
+                        India
+                    </p>
+
+                </div>
+
+                <img
+                    id="weatherIcon"
+                    src=""
+                    alt="Weather Icon">
+
+            </div>
+
+            <div class="temperature">
+
+                <h1 id="temp">
+                    30°C
+                </h1>
+
+                <h3 id="description">
+                    Clear Sky
+                </h3>
+
+            </div>
+
+            <div class="details">
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-temperature-half"></i>
+                    <span>Feels Like</span>
+                    <h4 id="feelsLike">30°C</h4>
+                </div>
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Humidity</span>
+                    <h4 id="humidity">70%</h4>
+                </div>
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-wind"></i>
+                    <span>Wind</span>
+                    <h4 id="wind">10 km/h</h4>
+                </div>
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <span>Pressure</span>
+                    <h4 id="pressure">1000 hPa</h4>
+                </div>
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>Visibility</span>
+                    <h4 id="visibility">10 km</h4>
+                </div>
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-sun"></i>
+                    <span>Sunrise</span>
+                    <h4 id="sunrise">06:00 AM</h4>
+                </div>
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Sunset</span>
+                    <h4 id="sunset">06:30 PM</h4>
+                </div>
+
+                <div class="detail-box">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Updated</span>
+                    <h4 id="updatedTime">--</h4>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Forecast -->
+        <div id="forecastSection" class="hidden">
+
+            <h2>5-Day Forecast</h2>
+
+            <div id="forecastCards">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
