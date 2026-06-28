@@ -1,6 +1,7 @@
 # Weather-Dashboard
 Project Description:
-         Liquid Glass Weather Dashboard is a modern and responsive weather application built using HTML, CSS, and Vanilla JavaScript. It fetches real-time weather data from the OpenWeatherMap REST API using the Fetch API with async/await, providing accurate weather information based on the searched city or the user's current location. The application features a premium Liquid Glass (Glassmorphism) UI, dynamic weather-based backgrounds, dark/light mode, comprehensive error handling, a 5-day weather forecast, and responsive design for both desktop and mobile devices. This project demonstrates asynchronous JavaScript, REST API integration, JSON data processing, DOM manipulation, and modern front-end UI development.
+
+Liquid Glass Weather Dashboard is a modern and responsive weather application built using HTML, CSS, and Vanilla JavaScript. It fetches real-time weather data from the OpenWeatherMap REST API using the Fetch API with async/await, providing accurate weather information based on the searched city or the user's current location. The application features a premium Liquid Glass (Glassmorphism) UI, dynamic weather-based backgrounds, dark/light mode, comprehensive error handling, a 5-day weather forecast, and responsive design for both desktop and mobile devices. This project demonstrates asynchronous JavaScript, REST API integration, JSON data processing, DOM manipulation, and modern front-end UI development.
 
 Technologies Used:
 1. HTML5
