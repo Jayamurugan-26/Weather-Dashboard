@@ -25,7 +25,5 @@ Key Features:
 📱 Fully responsive design
 🔄 Loading animation & error handling
 📈 5-day weather forecast
-
 ⭐ Favorite cities & recent search history
-
 🎨 Modern Liquid Glass UI
